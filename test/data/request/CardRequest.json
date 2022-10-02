@@ -1,0 +1,13 @@
+{
+  "REQUEST_CREATE_CARD": {
+    "pathParameters": null,
+    "body": {
+      "cardNumber": 2211111111411324,
+      "cvv": 100,
+      "expirationMonth": "11",
+      "expirationYear": "2022",
+      "email": "ricardocotrinacardenas@upn.edu.pe"
+    },
+    "headers": "null"
+  }
+}

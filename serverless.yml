@@ -21,31 +21,19 @@ iam:
 
 functions:
   createCard:
-    handler: src/handlers.createCard
+    handler: src/controller/CardController.createCard
     events:
       - httpApi:
           path: /card
           method: post
   getCard:
-    handler: src/handlers.getCard
+    handler: src/controller/CardController.getCard
     events:
       - httpApi:
           path: /card/{id}
           method: get
-  updateCard:
-    handler: src/handlers.updateCard
-    events:
-      - httpApi:
-          path: /card/{id}
-          method: put
-  deleteCard:
-    handler: src/handlers.deleteCard
-    events:
-      - httpApi:
-          path: /card/{id}
-          method: delete
-  listCard:
-    handler: src/handlers.listCard
+  getCards:
+    handler: src/controller/CardController.getCards
     events:
       - httpApi:
           path: /cards

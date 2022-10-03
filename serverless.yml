@@ -2,6 +2,12 @@ service: api-card
 
 frameworkVersion: "2"
 
+package:
+  individually: true
+  exclude:
+    - node_modules/**
+  excludeDevDependencies: true
+
 provider:
   name: aws
   runtime: nodejs12.x
@@ -42,6 +48,7 @@ functions:
 plugins:
   - serverless-plugin-typescript
   - serverless-offline
+  - serverless-plugin-reducer
 
 resources:
   Resources:
